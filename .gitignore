@@ -1,0 +1,6 @@
+.idx/
+.vscode
+.venv
+__py_cache__
+data/
+uv.lock

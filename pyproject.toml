@@ -1,7 +1,22 @@
 [project]
-name = "myapp"
+name = "data_analyst_practice"
 version = "0.1.0"
-description = "Add your description here"
+description = "Data analyst practice"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "polars",
+    "fastexcel",
+    "pytz",
+    "matplotlib",
+    "loguru",
+    "duckdb",
+    "ruff>=0.15.12",
+    "pytest>=9.0.3",
+    "ipykernel>=7.2.0",
+    "pyarrow>=24.0.0",
+    "pandas>=3.0.2",
+    "openpyxl>=3.1.5",
+    "python-calamine>=0.6.2",
+    "tabulate>=0.10.0",
+]
