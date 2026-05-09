@@ -19,4 +19,11 @@ dependencies = [
     "openpyxl>=3.1.5",
     "python-calamine>=0.6.2",
     "tabulate>=0.10.0",
+    "chardet>=7.4.3",
+    "ftfy>=6.3.1",
+    "missingno>=0.5.2",
+    "seaborn==0.13.2",
+    "pyampute>=0.0.3",
+    "pingouin>=0.6.1",
+    "little_mcar_test"
 ]

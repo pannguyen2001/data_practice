@@ -24,3 +24,30 @@ uv add <depedency name>
 - FastExcel
 - Pytz
 - Ruff
+
+## Clone from github using cmd
+```
+git clone https://github.com/pannguyen2001/data_practice
+```
+
+## Open project
+```
+cd data_practice
+code .
+```
+
+## Create virtual environment
+```
+uv venv .venv --python 3.11
+```
+
+## Activate virtual env
+```
+.venv\Scripts\Activate.ps1
+```
+
+## Install package
+```
+uv sync
+or uv add <package_name>
+```

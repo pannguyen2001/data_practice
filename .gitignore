@@ -4,3 +4,6 @@
 __py_cache__
 data/
 uv.lock
+*.csv
+*.xlsx
+*.docx
