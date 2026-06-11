@@ -1,0 +1,28 @@
+https://studio.firebase.google.com/datacrawling-35228062: crawl data code here
+
+da_practice: storage all
+data_pipeline: final prj
+data_da_ds_de: lab (maybe withdraw/remove)
+
+
+other prj, will combine to data_pipeline:
+data crawling
+data_validation
+gen_data_cap_prj
+api_testing_cap_prj_v2
+
+
+folder have X files has the same main bussiness object, can use regex or custom filter to group, each files (if excel) has the same sheets need to combine, ex: file sales_01.xlsx has sheet sales_A, sales_B; file sales_02.xlsx also has sheet sales_A, sales_B.
+Now:
+- Get all files in folder
+- Detect files has the same bussiness object -> group files
+- Each group, read all sheet has same name -> concat to 1  df
+- Write df to specific file type
+- Using multiple processing
+
+X file type to Y file type
+- Detect input file type (X) and output file type (Y)
+- Get read_X() function and write_Y() function
+- Get file name from path
+- Processing and log result
+- Using multiple processing

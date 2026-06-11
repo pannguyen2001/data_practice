@@ -25,5 +25,8 @@ dependencies = [
     "seaborn==0.13.2",
     "pyampute>=0.0.3",
     "pingouin>=0.6.1",
-    "little_mcar_test"
+    "scikit-learn>=1.8.0",
+    "xgboost>=3.2.0",
+    "lightgbm>=4.6.0",
+    "charset-normalizer>=3.4.7",
 ]

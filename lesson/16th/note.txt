@@ -1,2 +1,32 @@
 Data source: https://drive.google.com/drive/folders/1al4BHEcqO7wqruFdKU3Kd-yNrvDX0gJ1
 Origin post: https://www.facebook.com/share/p/1Afkb8AVL8/
+
+data crawling from public gg driver -> load data using polars with encoding utf8-lossy, read as str for all -> transfer to parquet -> load again -> IDA data:
+- Minssing value: visualizer, analyst, record result
+- Outlier: visualizer, analyst, record result
+Cleaning data, enrichment and transdorming:
+- apply correct data type for each column
+- data validation, remove incorrect data, keep best data quality -> log line error and column, value error -> apply for dataset
+- duplicate value -> remove, or keep? and mark as duplicated
+- Missing data: analyst -> detect missing type: MACR, MAR, MANR -> choose filling missing data method -> judge and choose most suitable among choosen method, comare between origin and changed data to ensure data impotancy, data consistency -> apply for dataset
+Outlier: using method to detect outlier -> choose most suitable method -> determine remove or keep -> apply for dataset and compare, judge result to ensure keep data impotancy
+- fill default value if need
+- normalize column, remove unecessary column
+- data type
+- mapping value if need
+- normalize format if need (date time,..)
+- split data if need
+- encoding, enrich,...
+
+
+logging, monitoing, orchestrator
+
+in golden phase:
+normalize to dim, fact table, data modelling
+
+
+ppyspark can read non utf8?
+detect and fix non-utf8:
+my idea: first rrad -> if can not read -> try strategy to detect and normailze to utf8 -> re read again -> if can not -> raise error, which line, which position in file is can not read as utf8
+
+crawl data: try from having auth info -> caon not -> down to non auth info if have, else log error -> if can not down with non auth info, raise error
