@@ -9,3 +9,5 @@ uv.lock
 *.docx
 /lesson/16th/invalid_utf8_chars_using_grep.txt
 *.png
+*.env
+*.parquet
