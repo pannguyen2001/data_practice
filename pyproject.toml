@@ -30,4 +30,6 @@ dependencies = [
     "lightgbm>=4.6.0",
     "charset-normalizer>=3.4.7",
     "gdown>=6.1.0",
+    "pydantic>=2.13.4",
+    "pyyaml>=6.0.3",
 ]

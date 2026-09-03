@@ -1,0 +1,6 @@
+- name: "google"
+  url: "https://google.com"
+- name: "yahoo"
+  url: "https://yahoo.com"
+- name: "bing"
+  url: "https://bing.com"
